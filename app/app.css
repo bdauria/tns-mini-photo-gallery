@@ -1,0 +1,14 @@
+﻿.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+}
+
+Image.transformed-picture {
+  margin-top: 5;
+  /*width: 300;*/
+  height: 250;
+}
+
+Label.process-picture-icon {
+  font-size: 20;
+  horizontal-align: center;
+}

@@ -1,0 +1,46 @@
+Image.picture-placeholder {
+  height: 250;
+}
+
+StackLayout.take-picture-icon-wrapper {
+  horizontal-align: right;
+  margin: 15;
+  padding: 15;
+  border-width: 1;
+  border-color: #CCCCCC;
+  border-radius: 8;
+}
+
+Label.take-picture-icon {
+  font-size: 25;
+}
+
+GridLayout.thumbnails-bar {
+  margin-top: 10;
+}
+
+StackLayout.thumbnails-container,
+Image.thumbnail {
+  margin-left: 10;
+  margin-right: 10;
+}
+
+Image.thumbnail {
+  height: 50;
+}
+
+StackLayout.delete-picture-icon-wrapper {
+  background-color: #000000;
+  border-width: 1;
+  border-radius: 8;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin: 15;
+  vertical-align: bottom;
+  horizontal-align: right;
+}
+
+Label.delete-picture-icon {
+  margin: 7;
+  font-size: 15;
+}

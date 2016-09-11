@@ -1,0 +1,47 @@
+<StackLayout>
+  <GridLayout rows="auto">
+    <Image 
+      #displayedPicture 
+      stretch="aspectFill"
+      [src]="picturePlaceholderPath"
+      class="picture-placeholder"></Image>
+    <StackLayout 
+      [visibility]="deleteButtonVisibility"
+      class="delete-picture-icon-wrapper"
+      (tap)="deleteDisplayedPicture()">
+      <Label 
+        verticalAlignement="middle"
+        [text]="'fa-trash' | fonticon"
+        class="fa delete-picture-icon"></Label>
+    </StackLayout>
+  </GridLayout>
+  <GridLayout 
+    rows="auto"
+    columns="*, auto" 
+    orientation="horizontal"
+    class="thumbnails-bar">
+    <ScrollView 
+      col="0"
+      orientation="horizontal">
+      <StackLayout 
+        class="thumbnails-container"
+        orientation="horizontal">
+        <Image 
+          stretch="aspectFit"
+          *ngFor="let picture of pictures" 
+          [src]="picture"
+          class="thumbnail"
+          (tap)="display(picture)">
+        </Image>
+      </StackLayout>
+    </ScrollView>
+    <StackLayout 
+      col="1"
+      class="take-picture-icon-wrapper"
+      (tap)="takePicture()">  
+      <Label
+        [text]="'fa-camera' | fonticon"
+        class="fa take-picture-icon"></Label>
+    </StackLayout>
+  </GridLayout>
+</StackLayout>
